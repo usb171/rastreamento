@@ -1,0 +1,56 @@
+{% extends 'core_base.html' %}
+{% load static %}
+{% block body %}
+
+
+
+<style>
+ .card-login {
+     position: fixed;
+     right: 40%;
+     left: 40%;
+     top: 10%;
+     buttom: 1%;
+}
+</style>
+
+
+<div id="particles">
+    <div id="intro">
+        <div class="row">
+            <div class="card-panel teal">
+
+                <div class="section "></div>
+                <img class="responsive-img" style="width: 250px;" src="https://i.imgur.com/ax0NCsK.gif" />
+                <div class="section"></div>
+
+                <div class="input-field col s12">
+              <input id="user_name" type="text" class="validate" required>
+              <label for="user_name">Usuário</label>
+            </div>
+
+                <div class="input-field col s12">
+              <input id="password" type="password" class="validate" required>
+              <label for="password">Senha</label>
+            </div>
+
+                <div class="input-field col s12">
+              <br>
+            </div>
+
+                <div class="input-field col s12">
+              <button class="waves-effect waves-light btn" type="submmit">Login
+              </button>
+            </div>
+
+                <div class="input-field col s12">
+              <a href="#">Ainda não é membro? Crie já uma conta!</a>
+            </div>
+
+            </div>
+        </div>
+  </div>
+</div>
+
+
+{% endblock %}
